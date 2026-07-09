@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <div className="brand">Baku <em>Comix</em> — Linguistic Dataset Platform</div>
+        <div className="brand"><span style={{ color:"var(--az-blue)" }}>Baku</span>{" "}<span style={{ color:"var(--az-red)" }}>Comix</span>{" "}<span style={{ color:"var(--text3)", fontWeight:400, fontSize:12 }}>— Linguistic Dataset Platform</span></div>
         {tabs.map(t => (
           <button key={t.id} className={`nav-btn ${tab===t.id?'active':''}`} onClick={() => { setTab(t.id); refresh() }}>
             {t.label}
